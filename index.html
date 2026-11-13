@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Laxmi | Online Business Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <!-- Navigation Menu -->
+        <nav class="navigation">
+            <div class="nav-links">
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About Me</a>
+            </div>
+
+            <!-- Week 11: Dark Mode Button -->
+            <button id="theme-toggle" type="button">
+                Toggle Dark Mode
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+
+            <!-- CARD 1: Personal Business Card -->
+            <section class="business-card" id="profile">
+
+                <div class="profile">
+                    <p class="label">ONLINE BUSINESS CARD</p>
+
+                    <h1 id="profile-name">JAYA LAXMI</h1>
+
+                    <p class="card-info">
+                        Computer Engineering Student
+                    </p>
+
+                    <p class="location">Seoul, Korea</p>
+
+                    <img
+                        class="profile-image"
+                        src="profile.jpg"
+                        alt="Profile photo of Jaya Laxmi"
+                    >
+                </div>
+
+                <hr>
+
+                <!-- Contact Form -->
+                <section class="contact" id="contact">
+                    <h2>Get in Touch</h2>
+
+                    <form class="contact-form">
+                        <div class="name-fields">
+                            <input
+                                type="text"
+                                name="firstName"
+                                placeholder="First Name"
+                                aria-label="First Name"
+                                required
+                            >
+
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                aria-label="Last Name"
+                                required
+                            >
+                        </div>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            aria-label="Email Address"
+                            required
+                        >
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </section>
+
+                <footer>
+                    Software Engineering • Web Development
+                </footer>
+
+            </section>
+
+            <!-- CARD 2: About Me -->
+            <section class="business-card about-card" id="about">
+
+                <div class="profile">
+                    <p class="label">GET TO KNOW ME</p>
+
+                    <h2 class="card-heading">About Me</h2>
+
+                    <p class="card-info">
+                        I am a Computer Engineering student interested
+                        in software engineering and web development.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="about-details">
+                    <h3>My Interests</h3>
+
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Programming</li>
+                        <li>Software Engineering</li>
+                        <li>Learning New Technologies</li>
+                    </ul>
+                </div>
+
+                <footer>
+                    Learning • Creating • Growing
+                </footer>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Week 10 and Week 11 JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

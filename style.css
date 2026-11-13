@@ -1,0 +1,410 @@
+
+/* ========================================
+   GUCCI-INSPIRED LUXURY COLOR PALETTE
+   ======================================== */
+
+:root {
+    --green: #143D2B;
+    --red: #9E1B32;
+    --gold: #C6A15B;
+    --black: #111111;
+    --white: #FFFFFF;
+    --gray: #B8B8B8;
+    --light-text: #E0E0E0;
+}
+
+/* ========================================
+   BASIC STYLING
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    padding: 30px 20px;
+
+    background-color: var(--black);
+    color: var(--white);
+    font-family: Georgia, "Times New Roman", serif;
+
+    transition: background-color 0.3s ease;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 16px 22px;
+
+    background-color: var(--green);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navigation a {
+    display: block;
+    padding: 8px 14px;
+
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navigation a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Dark Mode Button */
+
+#theme-toggle {
+    padding: 10px 16px;
+
+    background-color: var(--red);
+    color: var(--white);
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #7F1427;
+}
+
+/* ========================================
+   TWO-CARD FLEXBOX LAYOUT
+   ======================================== */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    width: 100%;
+}
+
+.business-card {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 400px;
+    min-width: 0;
+    max-width: 520px;
+    padding: 32px;
+
+    background-color: var(--green);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+
+    transition: background-color 0.3s ease;
+}
+
+/* ========================================
+   PROFILE INFORMATION
+   ======================================== */
+
+.profile {
+    text-align: center;
+}
+
+.label {
+    margin-bottom: 14px;
+
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#profile-name {
+    margin-bottom: 8px;
+
+    color: var(--white);
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.card-heading {
+    margin-bottom: 12px;
+
+    color: var(--white);
+    font-size: 28px;
+}
+
+.card-info {
+    color: var(--light-text);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.location {
+    margin-top: 5px;
+
+    color: var(--gold);
+    font-size: 14px;
+}
+
+/* ========================================
+   PROFILE IMAGE
+   ======================================== */
+
+.profile-image {
+    display: block;
+
+    width: 250px;
+    max-width: 100%;
+    height: 300px;
+
+    margin: 20px auto 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+}
+
+/* ========================================
+   DIVIDER
+   ======================================== */
+
+hr {
+    width: 100%;
+    margin: 28px 0;
+
+    border: none;
+    border-top: 1px solid var(--gold);
+}
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.contact h2 {
+    margin-bottom: 16px;
+
+    color: var(--gold);
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 20px;
+
+    background-color: #102F22;
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+}
+
+.name-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.contact-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid #527061;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder {
+    color: var(--gray);
+}
+
+.contact-form input:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 4px;
+
+    background-color: var(--red);
+    color: var(--white);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #7F1427;
+}
+
+/* ========================================
+   ABOUT ME SECTION
+   ======================================== */
+
+.about-details h3 {
+    margin-bottom: 14px;
+
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.about-details ul {
+    padding-left: 22px;
+
+    color: var(--light-text);
+    line-height: 2;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    margin-top: auto;
+    padding-top: 24px;
+
+    text-align: center;
+    color: #D2C7B5;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* ========================================
+   WEEK 11: DARK MODE
+   ======================================== */
+
+body.dark-mode {
+    background-color: #050505;
+}
+
+body.dark-mode .navigation {
+    background-color: #111111;
+}
+
+body.dark-mode .business-card {
+    background-color: #111111;
+}
+
+body.dark-mode .contact-form {
+    background-color: #080808;
+}
+
+body.dark-mode .contact-form input {
+    background-color: #050505;
+}
+
+body.dark-mode .about-details ul {
+    color: #E0E0E0;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .business-card {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: none;
+        padding: 28px 22px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    #theme-toggle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #profile-name {
+        font-size: 27px;
+    }
+
+    .card-heading {
+        font-size: 25px;
+    }
+
+    .name-fields {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 270px;
+    }
+
+    .business-card {
+        padding: 24px 18px;
+    }
+}
